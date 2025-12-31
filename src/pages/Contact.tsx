@@ -6,28 +6,28 @@ const defaultForm = { name: '', contact: '', message: '' }
 
 const Contact = () => {
   const [form, setForm] = useState(defaultForm)
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-  const [error, setError] = useState<string | null>(null)
+//   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+//   const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    if (!form.name || !form.contact || !form.message) {
-      setError('Please fill in all fields before sending the enquiry.')
-      return
-    }
+//   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+//     event.preventDefault()
+//     if (!form.name || !form.contact || !form.message) {
+//       setError('Please fill in all fields before sending the enquiry.')
+//       return
+//     }
 
-    try {
-      setStatus('loading')
-      setError(null)
-      await submitEnquiry(form)
-      setStatus('success')
-      setForm(defaultForm)
-    } catch (err) {
-      console.error(err)
-      setStatus('error')
-      setError('Something went wrong. Please try again later.')
-    }
-  }
+//     try {
+//       setStatus('loading')
+//       setError(null)
+//       await submitEnquiry(form)
+//       setStatus('success')
+//       setForm(defaultForm)
+//     } catch (err) {
+//       console.error(err)
+//       setStatus('error')
+//       setError('Something went wrong. Please try again later.')
+//     }
+//   }
 
   return (
     <div className="grid gap-10 md:grid-cols-2">

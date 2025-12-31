@@ -29,8 +29,7 @@ const Home = () => {
               Comfort desserts with unapologetic flavor and a grumpy streak
             </h1>
             <p className="mt-4 text-base text-charcoal/80">
-              We craft cheesecake, tiramisu, and layered cakes with better ingredients, obsessive technique, and clear storage
-              instructions so you can serve them confidently.
+              We craft jellyheart cakes and tiramisu with obsessive technique so you can serve them confidently.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
