@@ -1,11 +1,11 @@
-import type { FormEvent } from 'react'
-import { useState } from 'react'
-import { submitEnquiry } from '../services/enquiriesService'
+// import type { FormEvent } from 'react'
+// import { useState } from 'react'
+// import { submitEnquiry } from '../services/enquiriesService'
 
-const defaultForm = { name: '', contact: '', message: '' }
+// const defaultForm = { name: '', contact: '', message: '' }
 
 const Contact = () => {
-  const [form, setForm] = useState(defaultForm)
+//   const [form, setForm] = useState(defaultForm)
 //   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 //   const [error, setError] = useState<string | null>(null)
 
