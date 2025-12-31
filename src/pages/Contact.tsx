@@ -36,18 +36,19 @@ const Contact = () => {
         <h1 className="font-display text-4xl text-charcoal">Let's talk dessert logistics</h1>
         <p className="mt-3 text-sm text-charcoal/80">Reach out for quotes, custom briefs, or last-minute cravings.</p>
         <div className="mt-6 space-y-4 text-sm text-charcoal/80">
-          <a href="https://instagram.com/grumpy.mummy.bakes" target="_blank" rel="noreferrer" className="block text-brand-base">
-            Instagram @grumpy.mummy.bakes
+          <a href="https://www.instagram.com/grumpymummybakes?igsh=eXEwM2o0YzJ5eDFl&utm_source=qr" target="_blank" rel="noreferrer" className="block text-brand-base">
+            Instagram @grumpymummybakes
           </a>
-          <a href="https://wa.me/0000000000" target="_blank" rel="noreferrer" className="block text-brand-base">
-            WhatsApp +65 0000 0000
+          <a href="https://www.tiktok.com/@grumpymummybake?_r=1" target="_blank" rel="noreferrer" className="block text-brand-base">
+            Tiktok @grumpymummybake
           </a>
-          <a href="mailto:hello@grumpymummy.com" className="block text-brand-base">
-            hello@grumpymummy.com
+          <a href="https://t.me/grumpymummybakes" target="_blank" rel="noreferrer" className="block text-brand-base">
+            Telegram channel @GrumpyMummy
           </a>
         </div>
       </section>
 
+{/* For next time to link to email
       <section className="rounded-[32px] bg-white/80 p-6 shadow-card">
         <h2 className="font-display text-2xl text-charcoal">Send an enquiry</h2>
         <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
@@ -101,6 +102,7 @@ const Contact = () => {
           </button>
         </form>
       </section>
+    */}
     </div>
   )
 }
