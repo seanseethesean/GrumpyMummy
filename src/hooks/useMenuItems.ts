@@ -1,10 +1,10 @@
 import type { Unsubscribe } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
-import { sampleMenuItems } from '../data/seedData'
+import { menuItems } from '../data/seedData'
 import { listenToMenuItems } from '../services/menuService'
 import type { MenuItem } from '../types/menu'
 
-const fallbackMenuItems: MenuItem[] = sampleMenuItems.map((item, index) => ({
+const fallbackMenuItems: MenuItem[] = menuItems.map((item, index) => ({
   ...item,
   id: `sample-${index}`,
 }))

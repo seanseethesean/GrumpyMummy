@@ -9,7 +9,7 @@ import { useMenuItems } from '../hooks/useMenuItems'
 import type { MenuItem } from '../types/menu'
 
 const whatsappLink = 'https://wa.me/0000000000'
-const instagramLink = 'https://instagram.com/grumpy.mummy.bakes'
+const instagramLink = 'https://www.instagram.com/grumpymummybakes?igsh=eXEwM2o0YzJ5eDFl&utm_source=qr'
 
 const Home = () => {
   const { latestActive } = useAnnouncements()
@@ -54,7 +54,7 @@ const Home = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-brand-dark">How we work</p>
             <ul className="mt-4 space-y-3 text-sm text-charcoal/80">
               <li>• Made-to-order with a 3-4 day lead time</li>
-              <li>• Pick-up at Farrer Park or islandwide delivery via partner courier</li>
+              <li>• Pick-up at NUS or Pasir Ris</li>
               <li>• Storage cards with every order (fridge + freezer guidance)</li>
               <li>• Custom flavors welcome with two-week notice</li>
             </ul>
