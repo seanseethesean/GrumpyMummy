@@ -1,7 +1,7 @@
 import type { AnnouncementPayload } from '../types/announcement'
 import type { MenuItemPayload } from '../types/menu'
-import tiramisuImage from '../assets/images/Tiramisu.jpg'
-import rubyCheesecakeImage from '../assets/images/Cheesecake.jpg'
+import tiramisuImage from '../assets/images/Tiramisu.png'
+import rubyCheesecakeImage from '../assets/images/Cheesecake.png'
 
 export const menuItems: MenuItemPayload[] = [
   {
