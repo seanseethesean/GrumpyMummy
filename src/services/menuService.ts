@@ -12,7 +12,7 @@ import {
   serverTimestamp,
   updateDoc,
 } from 'firebase/firestore'
-import { sampleMenuItems } from '../data/seedData'
+import { menuItems } from '../data/seedData'
 import type { MenuItem, MenuItemPayload } from '../types/menu'
 import { db } from './firebase'
 
@@ -75,5 +75,5 @@ export const seedMenuItemsIfEmpty = async () => {
   const countSnapshot = await getCountFromServer(menuCollection)
   if (countSnapshot.data().count > 0) return
 
-  await Promise.all(sampleMenuItems.map((item) => createMenuItem(item)))
+  await Promise.all(menuItems.map((item) => createMenuItem(item)))
 }

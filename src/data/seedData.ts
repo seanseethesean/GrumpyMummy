@@ -1,7 +1,9 @@
 import type { AnnouncementPayload } from '../types/announcement'
 import type { MenuItemPayload } from '../types/menu'
+import tiramisuImage from '../assets/images/Tiramisu.jpg'
+import rubyCheesecakeImage from '../assets/images/Cheesecake.jpg'
 
-export const sampleMenuItems: MenuItemPayload[] = [
+export const menuItems: MenuItemPayload[] = [
   {
     name: 'Ruby Cheesecake',
     category: 'Cakes',
@@ -14,11 +16,10 @@ export const sampleMenuItems: MenuItemPayload[] = [
     ],
     status: 'available',
     featured: true,
-    imageUrl:
-      'https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=900&q=80',
+    imageUrl: rubyCheesecakeImage,
   },
   {
-    name: 'Midnight Tiramisu',
+    name: 'Tiramisu SLOP',
     category: 'Cakes',
     description:
       'Single-origin espresso soaked sponge layered with mascarpone cream, Valrhona cocoa, and a whisper of dark rum.',
@@ -29,8 +30,7 @@ export const sampleMenuItems: MenuItemPayload[] = [
     ],
     status: 'available',
     featured: true,
-    imageUrl:
-      'https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=900&q=80',
+    imageUrl: tiramisuImage,
   },
 ]
 
