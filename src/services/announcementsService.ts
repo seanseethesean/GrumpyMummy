@@ -4,6 +4,8 @@ import {
   addDoc,
   collection,
   deleteDoc,
+  getDocs,
+  limit,
   doc,
   getCountFromServer,
   onSnapshot,
@@ -72,8 +74,8 @@ export const updateAnnouncement = (id: string, payload: Partial<AnnouncementPayl
 export const deleteAnnouncement = (id: string) => deleteDoc(doc(announcementsCollection, id))
 
 export const seedAnnouncementsIfEmpty = async () => {
-  const countSnapshot = await getCountFromServer(announcementsCollection)
-  if (countSnapshot.data().count > 0) return
+  const snap = await getDocs(query(announcementsCollection, limit(1)))
+  if (!snap.empty) return
 
   await Promise.all(sampleAnnouncements.map((announcement) => createAnnouncement(announcement)))
 }

@@ -8,5 +8,9 @@ export const ensureSeedData = async () => {
   if (!seedEnabled || hasSeeded) return
 
   hasSeeded = true
-  await Promise.all([seedMenuItemsIfEmpty(), seedAnnouncementsIfEmpty()])
+  try {
+    await Promise.all([seedMenuItemsIfEmpty(), seedAnnouncementsIfEmpty()])
+  } catch (e) {
+    console.error('Seeding failed (non-blocking):', e)
+  }
 }
