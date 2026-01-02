@@ -7,7 +7,6 @@ import {
   getDocs,
   limit,
   doc,
-  getCountFromServer,
   onSnapshot,
   orderBy,
   query,
