@@ -40,8 +40,6 @@ const Menu = () => {
                 : 'border-charcoal/20 bg-white text-charcoal hover:border-brand-base'
             }`}
           >
-            
-            
             {category}
           </button>
         ))}

@@ -23,7 +23,8 @@ const AdminLogin = () => {
     setError(null)
 
     try {
-      await loginWithEmail(email, password)
+      const trimmedEmail = email.trim()
+      await loginWithEmail(trimmedEmail, password)
       const redirectPath = (location.state as { from?: string } | null)?.from || '/admin/menu'
       navigate(redirectPath, { replace: true })
     } catch (err) {
