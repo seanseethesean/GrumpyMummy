@@ -19,8 +19,8 @@ const MenuItemCard = ({ item, onSelect }: MenuItemCardProps) => (
     className="card-sheen flex flex-col overflow-hidden rounded-3xl border border-amber-100/80 bg-white text-left shadow-card"
   >
     {item.imageUrl && (
-      <div className="relative h-48 w-full overflow-hidden">
-        <img src={item.imageUrl} alt={item.name} className="h-full w-full object-cover transition duration-500 hover:scale-105" />
+      <div className="relative h-72 w-full overflow-hidden">
+        <img src={item.imageUrl} alt={item.name} className="h-full w-full object-cover object-bottom transition duration-500 hover:scale-105" />
         <span className="absolute left-4 top-4 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand-dark">
           {statusCopy[item.status]}
         </span>

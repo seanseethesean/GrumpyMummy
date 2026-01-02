@@ -11,8 +11,9 @@ export const menuItems: MenuItemPayload[] = [
       'Silky ruby chocolate cheesecake with a brown butter biscuit base, finished with macerated berries and edible petals.',
     allergens: ['Dairy', 'Gluten', 'Eggs'],
     variants: [
-      { label: '6" (6-8 slices)', price: 85 },
-      { label: '8" (10-12 slices)', price: 110 },
+      { label: 'Mini" (2" x 2")', price: 2.99 },
+      { label: 'Circle" (9")', price: 37.99 },
+      { label: 'Square" (10" x 10")', price: 54.99 },
     ],
     status: 'available',
     featured: true,
@@ -25,8 +26,9 @@ export const menuItems: MenuItemPayload[] = [
       'Single-origin espresso soaked sponge layered with mascarpone cream, Valrhona cocoa, and a whisper of dark rum.',
     allergens: ['Dairy', 'Gluten', 'Eggs'],
     variants: [
-      { label: '7" (8 servings)', price: 95 },
-      { label: 'Dessert Cups (box of 6)', price: 60 },
+      { label: 'Mini" (2" x 2")', price: 2.99 },
+      { label: 'Regular (3" x 4")', price: 7.99 },
+      { label: 'Super" (8" x 8")', price: 29.99 },
     ],
     status: 'available',
     featured: true,
