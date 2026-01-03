@@ -29,24 +29,73 @@ const Contact = () => {
 //     }
 //   }
 
-  return (
-    <div className="grid gap-10 md:grid-cols-2">
-      <section>
-        <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">Contact</p>
-        <h1 className="font-display text-4xl text-charcoal">Let's talk dessert logistics</h1>
-        <p className="mt-3 text-sm text-charcoal/80">Reach out for quotes, custom briefs, or last-minute cravings.</p>
-        <div className="mt-6 space-y-4 text-sm text-charcoal/80">
-          <a href="https://www.instagram.com/grumpymummybakes?igsh=eXEwM2o0YzJ5eDFl&utm_source=qr" target="_blank" rel="noreferrer" className="block text-brand-base">
-            Instagram @grumpymummybakes
-          </a>
-          <a href="https://www.tiktok.com/@grumpymummybake?_r=1" target="_blank" rel="noreferrer" className="block text-brand-base">
-            Tiktok @grumpymummybake
-          </a>
-          <a href="https://t.me/grumpymummybakes" target="_blank" rel="noreferrer" className="block text-brand-base">
-            Telegram channel @GrumpyMummy
-          </a>
-        </div>
-      </section>
+return (
+  <div className="grid gap-10 md:grid-cols-2">
+    <section>
+      <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">
+        Contact
+      </p>
+
+      <h1 className="mt-2 font-display text-4xl text-charcoal">
+        Let's talk dessert logistics
+      </h1>
+
+      <p className="mt-3 text-sm text-charcoal/80">
+        Reach out for quotes, custom briefs, or last-minute cravings.
+      </p>
+
+      {/* Primary CTA: Email */}
+      <div className="mt-8">
+        <p className="text-xs uppercase tracking-wide text-charcoal/60">
+          Email us directly
+        </p>
+
+        <a
+          href="mailto:grumpymummybakes@gmail.com"
+          className="mt-2 inline-block rounded-md border border-charcoal/20 px-4 py-2 font-sans text-sm text-charcoal transition hover:bg-charcoal/5"
+        >
+          grumpymummybakes@gmail.com
+        </a>
+
+        <p className="mt-2 text-xs text-charcoal/60">
+          For bulk orders, custom designs, or urgent requests
+        </p>
+      </div>
+
+      {/* Secondary: Social links */}
+      <div className="mt-8 space-y-3 text-sm">
+        <p className="text-xs uppercase tracking-wide text-charcoal/60">
+          Or reach us on
+        </p>
+
+        <a
+          href="https://www.instagram.com/grumpymummybakes"
+          target="_blank"
+          rel="noreferrer"
+          className="block text-brand-base hover:underline"
+        >
+          Instagram @grumpymummybakes
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@grumpymummybake"
+          target="_blank"
+          rel="noreferrer"
+          className="block text-brand-base hover:underline"
+        >
+          TikTok @grumpymummybake
+        </a>
+
+        <a
+          href="https://t.me/grumpymummybakes"
+          target="_blank"
+          rel="noreferrer"
+          className="block text-brand-base hover:underline"
+        >
+          Telegram channel @GrumpyMummy
+        </a>
+      </div>
+    </section>
 
 {/* For next time to link to email
       <section className="rounded-[32px] bg-white/80 p-6 shadow-card">

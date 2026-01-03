@@ -30,11 +30,20 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       setUser(firebaseUser)
+      console.log('Logged in UID:', firebaseUser?.uid)
+      console.log('Logged in email:', firebaseUser?.email)
 
       if (firebaseUser) {
         try {
-          const adminDoc = await getDoc(doc(db, 'admins', firebaseUser.uid))
-          setIsAdmin(adminDoc.exists())
+        //   const adminDoc = await getDoc(doc(db, 'admins', firebaseUser.uid))
+        //   setIsAdmin(adminDoc.exists())
+        const ref = doc(db, 'admins', firebaseUser.uid)
+        console.log('Checking admin doc:', ref.path)
+
+        const adminDoc = await getDoc(ref)
+        console.log('Admin doc exists:', adminDoc.exists())
+
+    setIsAdmin(adminDoc.exists())
         } catch (error) {
           console.error('Failed to verify admin allowlist', error)
           setIsAdmin(false)

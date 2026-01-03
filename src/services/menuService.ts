@@ -4,8 +4,9 @@ import {
   addDoc,
   collection,
   deleteDoc,
+  getDocs,
+  limit,
   doc,
-  getCountFromServer,
   onSnapshot,
   orderBy,
   query,
@@ -72,8 +73,8 @@ export const updateMenuItem = (id: string, payload: Partial<MenuItemPayload>) =>
 export const deleteMenuItem = (id: string) => deleteDoc(doc(menuCollection, id))
 
 export const seedMenuItemsIfEmpty = async () => {
-  const countSnapshot = await getCountFromServer(menuCollection)
-  if (countSnapshot.data().count > 0) return
+  const snap = await getDocs(query(menuCollection, limit(1)))
+  if (!snap.empty) return
 
   await Promise.all(menuItems.map((item) => createMenuItem(item)))
 }
