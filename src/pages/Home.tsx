@@ -29,7 +29,7 @@ const Home = () => {
               Comfort desserts with unapologetic flavor and a grumpy streak
             </h1>
             <p className="mt-4 text-base text-charcoal/80">
-              We craft jellyheart cakes and tiramisu with obsessive technique so you can serve them confidently.
+              We craft jellyheart cakes and tiramisu with obsessive technique so you can serve them confidently
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
@@ -54,9 +54,8 @@ const Home = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-brand-dark">How we work</p>
             <ul className="mt-4 space-y-3 text-sm text-charcoal/80">
               <li>• Pre-orders for the following week closes every Saturday</li>
-              <li>• Flexible weekday delivery & pickup (NUS or Pasir Ris)</li>
-              <li>• Baked fresh on Saturdays & Sundays</li>
-              <li>• Best enjoyed within 5 days of baking</li>
+              <li>• Flexible weekday pickup (NUS or Pasir Ris)</li>
+              <li>• Best-by guidance will be provided with each order</li>
               <li>• Refrigerated storage recommended for freshness</li>
             </ul>
           </div>
