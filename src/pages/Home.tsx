@@ -8,7 +8,7 @@ import { useAnnouncements } from '../hooks/useAnnouncements'
 import { useMenuItems } from '../hooks/useMenuItems'
 import type { MenuItem } from '../types/menu'
 
-const whatsappLink = 'https://wa.me/0000000000'
+const telegramLink = 'https://t.me/Joshualeong'
 const instagramLink = 'https://www.instagram.com/grumpymummybakes?igsh=eXEwM2o0YzJ5eDFl&utm_source=qr'
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       <section className="grain-overlay rounded-[32px] bg-white px-6 py-12 shadow-card md:px-12">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">Small batch baking studio</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">Small batch baking</p>
             <h1 className="mt-3 font-display text-4xl leading-tight text-charcoal md:text-5xl">
               Comfort desserts with unapologetic flavor and a grumpy streak
             </h1>
@@ -33,12 +33,12 @@ const Home = () => {
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
-                href={whatsappLink}
+                href={telegramLink}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-brand-base px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-cream shadow-card transition hover:bg-brand-dark"
               >
-                Order on WhatsApp
+                Order on Telegram
               </a>
               <a
                 href={instagramLink}
@@ -53,10 +53,11 @@ const Home = () => {
           <div className="rounded-[28px] bg-brand-light/60 p-6">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-dark">How we work</p>
             <ul className="mt-4 space-y-3 text-sm text-charcoal/80">
-              <li>• Made-to-order with a 3-4 day lead time</li>
-              <li>• Pick-up at NUS or Pasir Ris</li>
-              <li>• Storage cards with every order (fridge + freezer guidance)</li>
-              <li>• Custom flavors welcome with two-week notice</li>
+              <li>• Pre-orders for the following week closes every Saturday</li>
+              <li>• Flexible weekday delivery & pickup (NUS or Pasir Ris)</li>
+              <li>• Baked fresh on Saturdays & Sundays</li>
+              <li>• Best enjoyed within 5 days of baking</li>
+              <li>• Refrigerated storage recommended for freshness</li>
             </ul>
           </div>
         </div>
@@ -83,21 +84,6 @@ const Home = () => {
             ))}
           </div>
         )}
-      </section>
-
-      <section className="grid gap-6 rounded-[32px] bg-white/80 p-8 shadow-card md:grid-cols-3">
-        <div>
-          <h3 className="font-display text-2xl text-charcoal">Quality</h3>
-          <p className="mt-2 text-sm text-charcoal/80">We use cultured butter, Belgian chocolate, and farm eggs. No stabilisers.</p>
-        </div>
-        <div>
-          <h3 className="font-display text-2xl text-charcoal">Hygiene</h3>
-          <p className="mt-2 text-sm text-charcoal/80">Every dessert leaves chilled with handling notes, so your guests get the intended texture.</p>
-        </div>
-        <div>
-          <h3 className="font-display text-2xl text-charcoal">Service</h3>
-          <p className="mt-2 text-sm text-charcoal/80">Transparent lead times, WhatsApp updates, and optional courier delivery with tracking.</p>
-        </div>
       </section>
 
       {selectedItem && <MenuItemModal item={selectedItem} onClose={() => setSelectedItem(null)} />}

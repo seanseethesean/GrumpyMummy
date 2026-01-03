@@ -1,4 +1,5 @@
 import type { MenuItem } from '../../types/menu'
+import { getAllergenNote } from '../../utils/allergenNotes'
 import { formatPrice } from '../../utils/format'
 
 interface MenuItemCardProps {
@@ -12,7 +13,10 @@ const statusCopy: Record<MenuItem['status'], string> = {
   'sold-out': 'Sold out',
 }
 
-const MenuItemCard = ({ item, onSelect }: MenuItemCardProps) => (
+const MenuItemCard = ({ item, onSelect }: MenuItemCardProps) => {
+  const allergenNote = getAllergenNote(item.name)
+
+  return (
   <button
     type="button"
     onClick={() => onSelect(item)}
@@ -46,11 +50,13 @@ const MenuItemCard = ({ item, onSelect }: MenuItemCardProps) => (
         </div>
       </div>
       <div className="mt-auto">
-        <p className="text-xs uppercase tracking-[0.3em] text-charcoal/50">Allergens</p>
-        <p className="text-sm text-charcoal">{item.allergens.join(', ')}</p>
+        <p className="text-[11px] uppercase tracking-[0.25em] text-charcoal/50">Allergens & Notes</p>
+        <p className="text-sm text-charcoal/80">{item.allergens.join(', ')}</p>
+        {allergenNote && <p className="text-xs text-charcoal/60 leading-relaxed">{allergenNote}</p>}
       </div>
     </div>
   </button>
-)
+  )
+}
 
 export default MenuItemCard

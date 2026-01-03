@@ -10,7 +10,7 @@ const links = [
   { path: '/contact', label: 'Contact' },
 ]
 
-const whatsappLink = 'https://wa.me/0000000000'
+const telegramLink = 'https://t.me/Joshualeong'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,12 +34,12 @@ const Navbar = () => {
             </NavLink>
           ))}
           <a
-            href={whatsappLink}
+            href={telegramLink}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-brand-base px-5 py-2 text-sm font-semibold text-cream shadow-card transition hover:-translate-y-0.5 hover:bg-brand-dark"
           >
-            Order on WhatsApp
+            Order on Telegram
           </a>
         </nav>
 
@@ -64,12 +64,12 @@ const Navbar = () => {
               </NavLink>
             ))}
             <a
-              href={whatsappLink}
+              href={telegramLink}
               target="_blank"
               rel="noreferrer"
               className="inline-flex w-full items-center justify-center rounded-full bg-brand-base px-5 py-2 text-sm font-semibold text-cream"
             >
-              Order on WhatsApp
+              Order on Telegram
             </a>
           </div>
         </div>

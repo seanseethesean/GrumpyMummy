@@ -8,7 +8,7 @@ export const menuItems: MenuItemPayload[] = [
     name: 'Ruby Cheesecake',
     category: 'Cakes',
     description:
-      'Silky ruby chocolate cheesecake with a brown butter biscuit base, finished with macerated berries and edible petals.',
+      'Creamy cheesecake set with a ruby jelly heart, layered on a brown-butter biscuit base and finished with macerated berries',
     allergens: ['Dairy', 'Gluten', 'Eggs'],
     variants: [
       { label: 'Mini" (2" x 2")', price: 2.99 },
@@ -23,7 +23,7 @@ export const menuItems: MenuItemPayload[] = [
     name: 'Tiramisu SLOP',
     category: 'Cakes',
     description:
-      'Single-origin espresso soaked sponge layered with mascarpone cream, Valrhona cocoa, and a whisper of dark rum.',
+      'Espresso-soaked sponge layered with mascarpone cream, Valrhona cocoa, and a soft whisper of dark rum',
     allergens: ['Dairy', 'Gluten', 'Eggs'],
     variants: [
       { label: 'Mini" (2" x 2")', price: 2.99 },
@@ -38,8 +38,8 @@ export const menuItems: MenuItemPayload[] = [
 
 export const sampleAnnouncements: AnnouncementPayload[] = [
   {
-    title: 'January Slots Update',
-    message: 'We are fully booked for the first two weekends of January. Limited weekday pick-ups available – drop us a WhatsApp to secure a slot.',
+    title: "Valentine's Day Special",
+    message: 'A new package is available at our pop-up stores around NUS!',
     startAt: new Date().toISOString(),
     endAt: new Date(Date.now() + 1000 * 60 * 60 * 24 * 14).toISOString(),
     active: true,
