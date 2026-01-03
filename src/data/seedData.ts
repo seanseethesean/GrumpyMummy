@@ -8,8 +8,8 @@ export const menuItems: MenuItemPayload[] = [
     name: 'Ruby Cheesecake',
     category: 'Cakes',
     description:
-      'Silky ruby chocolate cheesecake with a brown butter biscuit base, finished with macerated berries and edible petals.',
-    allergens: ['Dairy', 'Gluten', 'Eggs'],
+      'strawberry jelly mmmmmm',
+    allergens: ['Cheese', 'Gelatin (Beef)', 'Gluten'],
     variants: [
       { label: 'Mini" (2" x 2")', price: 2.99 },
       { label: 'Circle" (9")', price: 37.99 },
@@ -23,8 +23,8 @@ export const menuItems: MenuItemPayload[] = [
     name: 'Tiramisu SLOP',
     category: 'Cakes',
     description:
-      'Single-origin espresso soaked sponge layered with mascarpone cream, Valrhona cocoa, and a whisper of dark rum.',
-    allergens: ['Dairy', 'Gluten', 'Eggs'],
+      'sloppy toppy ooooo',
+    allergens: ['Alcohol (Optional upon request)', 'Cheese', 'Gluten'],
     variants: [
       { label: 'Mini" (2" x 2")', price: 2.99 },
       { label: 'Regular (3" x 4")', price: 7.99 },

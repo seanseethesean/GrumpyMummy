@@ -25,7 +25,7 @@ const MenuItemModal = ({ item, onClose }: MenuItemModalProps) => {
         </button>
         <div className="grid gap-6 md:grid-cols-2">
           {item.imageUrl && (
-            <img src={item.imageUrl} alt={item.name} className="h-64 w-full rounded-2xl object-cover" />
+            <img src={item.imageUrl} alt={item.name} className="h-72 w-full rounded-2xl object-cover object-bottom" />
           )}
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-charcoal/50">{item.category}</p>
