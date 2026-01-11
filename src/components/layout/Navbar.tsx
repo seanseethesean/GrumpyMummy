@@ -20,7 +20,9 @@ const Navbar = () => {
 
   const mobileNavLinkClass = ({ isActive }: { isActive: boolean }) =>
     `block w-full rounded-2xl px-4 py-3 text-base font-medium transition ${
-      isActive ? 'bg-brand-base text-cream' : 'text-charcoal hover:bg-charcoal/5'
+      isActive
+        ? 'bg-white/70 text-brand-base'
+        : 'text-charcoal hover:bg-charcoal/5'
     }`
 
   return (

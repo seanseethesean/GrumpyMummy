@@ -42,7 +42,7 @@ const MenuItemCard = ({ item, onSelect }: MenuItemCardProps) => {
           {item.variants.slice(0, 3).map((variant) => (
             <li
               key={variant.label}
-              className="rounded-full bg-brand-light/60 px-3 py-1 text-sm text-charcoal"
+              className="w-fit rounded-full bg-brand-light/60 px-3 py-1 text-xs text-charcoal"
             >
               {variant.label} · {formatPrice(variant.price)}
             </li>
