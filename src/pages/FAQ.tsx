@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: 'Delivery or pickup?',
-    answer: 'Flexible weekday pickup at NUS or Pasir Ris. Courier delivery is available across Singapore, subject to location. Delivery fees will be quoted and confirmed with you before dispatch',
+    answer: 'Flexible weekday pickup at NUS or Pasir Ris. Delivery subject to location and quoted before dispatch',
   },
   {
     question: 'Payment methods',
@@ -32,7 +32,7 @@ const FAQ = () => (
         >
           Telegram
         </a>{' '}
-        – we respond within a day.
+        – we respond within a day
       </p>
     </div>
     <div className="space-y-4">

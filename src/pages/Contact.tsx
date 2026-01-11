@@ -37,11 +37,11 @@ return (
       </p>
 
       <h1 className="mt-2 font-display text-4xl text-charcoal">
-        Let's talk dessert logistics
+        Let's talk dessert 
       </h1>
 
       <p className="mt-3 text-sm text-charcoal/80">
-        Reach out for quotes, custom briefs, or last-minute cravings.
+        Reach out for quotes, bulk orders, or last-minute cravings.
       </p>
 
       {/* Primary CTA: Email */}
