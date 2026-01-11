@@ -8,7 +8,7 @@ export const menuItems: MenuItemPayload[] = [
     name: 'Ruby Cheesecake',
     category: 'Cakes',
     description:
-      'strawberry jelly mmmmmm',
+      'Buttery biscuit base with decadent cream cheese, fresh strawberries, and a springy sweet jelly top, a refreshing yet indulgent strawberry cheesecake dessert',
     allergens: ['Cheese', 'Gelatin (Beef)', 'Gluten'],
     variants: [
       { label: 'Mini" (2" x 2")', price: 2.99 },
@@ -23,8 +23,8 @@ export const menuItems: MenuItemPayload[] = [
     name: 'Tiramisu SLOP',
     category: 'Cakes',
     description:
-      'sloppy toppy ooooo',
-    allergens: ['Alcohol (Optional upon request)', 'Cheese', 'Gluten'],
+      'Decadent tiramisu layered with artisan ladyfinger biscuits soaked in rich espresso, finished with creamy mascarpone layers for an indulgent, melt-in-your-mouth dessert',
+    allergens: ['Alcohol', 'Cheese', 'Gluten'],
     variants: [
       { label: 'Mini" (2" x 2")', price: 2.99 },
       { label: 'Regular (3" x 4")', price: 7.99 },
