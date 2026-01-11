@@ -8,7 +8,7 @@ import type { MenuCategory, MenuItem } from '../types/menu'
 const categories: (MenuCategory | 'All')[] = ['All', 'Cakes']
 
 const Menu = () => {
-  const { items, loading, error } = useMenuItems()
+  const { items, loading } = useMenuItems()
   const [selectedCategory, setSelectedCategory] = useState<(typeof categories)[number]>('All')
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null)
 
@@ -45,8 +45,6 @@ const Menu = () => {
       </div>
 
       {loading && <Spinner label="Loading menu" />}
-      {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
-
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredItems.map((item) => (
           <MenuItemCard key={item.id} item={item} onSelect={(next) => setSelectedItem(next)} />

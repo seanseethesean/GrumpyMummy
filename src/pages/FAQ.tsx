@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: 'Delivery or pickup?',
-    answer: 'Flexible weekday pickup at NUS or Pasir Ris. Courier delivery is available across Singapore, subject to location. Delivery fees will be quoted and confirmed with you before dispatch',
+    answer: 'Flexible weekday pickup at NUS or Pasir Ris. Delivery subject to location and quoted before dispatch',
   },
   {
     question: 'Payment methods',
@@ -23,16 +23,16 @@ const FAQ = () => (
       <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">FAQ</p>
       <h1 className="font-display text-4xl text-charcoal">Everything you ask before ordering</h1>
       <p className="mt-4 text-sm text-charcoal/80">
-        Still unsure?{' '} Text us on {' '}
+        Still unsure? Text us on{' '}
         <a
           href="https://t.me/Joshualeong"
           target="_blank"
           rel="noreferrer"
-          className="underline decoration-brand-base underline-offset-2 hover:text-brand-base"
+          className="text-brand-base underline decoration-brand-base underline-offset-2 hover:text-brand-dark"
         >
-        Telegram
+          Telegram
         </a>{' '}
-        – we respond within a day.
+        – we respond within a day
       </p>
     </div>
     <div className="space-y-4">

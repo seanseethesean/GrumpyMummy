@@ -54,8 +54,7 @@ const Home = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-brand-dark">How we work</p>
             <ul className="mt-4 space-y-3 text-sm text-charcoal/80">
               <li>• Pre-orders for the following week closes every Saturday</li>
-              <li>• Flexible weekday pickup (NUS or Pasir Ris)</li>
-              <li>• Best-by guidance will be provided with each order</li>
+              <li>• Flexible weekday pickup at NUS or Pasir Ris</li>
               <li>• Refrigerated storage recommended for freshness</li>
             </ul>
           </div>

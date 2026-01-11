@@ -22,9 +22,9 @@ const Navbar = () => {
     <header className="sticky top-0 z-40 border-b border-amber-100/60 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-0 sm:px-6 lg:px-8">
         <Link to="/" className="flex flex-col text-left">
-            <div className="h-[110px] w-[110px] md:h-[140px] md:w-[140px] shrink-0">
-                <img src={logo} alt="Grumpy Mummy Logo" className="h-full w-full object-contain" />
-            </div>
+          <div className="h-16 w-16 shrink-0 md:h-[110px] md:w-[110px]">
+            <img src={logo} alt="Grumpy Mummy Logo" className="h-full w-full object-contain" />
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

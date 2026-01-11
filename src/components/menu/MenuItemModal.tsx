@@ -52,7 +52,7 @@ const MenuItemModal = ({ item, onClose }: MenuItemModalProps) => {
               <p className="text-sm text-charcoal/80">{item.allergens.join(', ')}</p>
               {allergenNote && <p className="text-xs text-charcoal/60 leading-relaxed">{allergenNote}</p>}
               <p className="mt-2 italic text-charcoal/70">
-                Lead time: 3-4 days · Storage: Keep refrigerated and consume within 48 hours.
+                Storage: Keep refrigerated and consume within 48 hours.
               </p>
             </div>
           </div>
