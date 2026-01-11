@@ -4,9 +4,8 @@ const About = () => (
       <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">About us</p>
       <h1 className="font-display text-4xl text-charcoal">Grumpy Mummy is a tiny but mighty dessert studio</h1>
       <p className="mt-4 text-base text-charcoal/80">
-        We started as a weekend project for friends who wanted a cheesecake that tasted like cream cheese, not sugar. Today we bake
-        in a dedicated home studio certified for small batch production. Every order is handmade, labeled with storage instructions,
-        and handed off with the same stern care we give our family.
+        Grumpy Mummy began as weekend bakes for friends — desserts made by the founder and his mum, brought to school for friends to try. One of us baked; the other kept coming back with ideas. After a year of empty containers and repeat requests, we decided to make it official.
+        Every order is handmade, clearly labeled with storage instructions, and packed with the same stern care we reserve for family.
       </p>
     </section>
 
@@ -32,15 +31,15 @@ const About = () => (
     <section className="grid gap-6 md:grid-cols-3">
       <div className="rounded-3xl border border-amber-100/60 bg-white/70 p-6">
         <h3 className="font-display text-xl text-charcoal">What makes us different</h3>
-        <p className="mt-2 text-sm text-charcoal/80">We treat desserts like a craft, balancing texture, acidity, and salt.</p>
+        <p className="mt-2 text-sm text-charcoal/80">We treat desserts like a craft, balancing texture, acidity, and salt</p>
       </div>
       <div className="rounded-3xl border border-amber-100/60 bg-white/70 p-6">
         <h3 className="font-display text-xl text-charcoal">Lead time</h3>
-        <p className="mt-2 text-sm text-charcoal/80">Standard bakes need 3-4 days. Customs need 10 days. Rush orders depend on oven space.</p>
+        <p className="mt-2 text-sm text-charcoal/80">Weekly pre-orders lock every Saturday Customs need about 10 days</p>
       </div>
       <div className="rounded-3xl border border-amber-100/60 bg-white/70 p-6">
         <h3 className="font-display text-xl text-charcoal">Pickup & Delivery</h3>
-        <p className="mt-2 text-sm text-charcoal/80">Self pick-up near Farrer Park or courier islandwide (fee based on zone).</p>
+        <p className="mt-2 text-sm text-charcoal/80">Flexible weekday pickup at NUS or Pasir Ris</p>
       </div>
     </section>
   </div>

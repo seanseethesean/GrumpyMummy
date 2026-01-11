@@ -1,27 +1,19 @@
 const faqs = [
   {
-    question: 'What is the lead time?',
-    answer: 'Standard cakes need 3-4 days notice. Custom finishes or large orders need 10-14 days.',
-  },
-  {
     question: 'Do you accept custom orders?',
-    answer: 'Yes. Share inspiration photos and serving size on WhatsApp. We will confirm feasibility and quote before locking slots.',
+    answer: 'Yes. Custom orders are accepted on a case-by-case basis. Share your request via Telegram or email, we’ll let you know what’s feasible and confirm pricing before locking the order',
   },
   {
     question: 'How do I store the desserts?',
-    answer: 'Keep refrigerated. Cheesecake: 3 days. Tiramisu: 2 days. Always serve slightly chilled for best texture.',
-  },
-  {
-    question: 'Allergy information',
-    answer: 'Our kitchen works with gluten, dairy, nuts, and eggs. While we clean between batches, cross-contact is possible.',
+    answer: 'Keep everything refrigerated',
   },
   {
     question: 'Delivery or pickup?',
-    answer: 'Pickup near Farrer Park. Courier delivery available across Singapore (from $18). We package everything in insulated bags.',
+    answer: 'Flexible weekday pickup at NUS or Pasir Ris. Courier delivery is available across Singapore, subject to location. Delivery fees will be quoted and confirmed with you before dispatch',
   },
   {
     question: 'Payment methods',
-    answer: 'PayNow is preferred. Credit card links available on request. A 50% deposit secures the baking slot.',
+    answer: 'PayNow is preferred',
   },
 ]
 
@@ -30,7 +22,18 @@ const FAQ = () => (
     <div className="mb-8 max-w-2xl">
       <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">FAQ</p>
       <h1 className="font-display text-4xl text-charcoal">Everything you ask before ordering</h1>
-      <p className="mt-4 text-sm text-charcoal/80">Still unsure? Slide into WhatsApp – we respond within a day.</p>
+      <p className="mt-4 text-sm text-charcoal/80">
+        Still unsure?{' '} Text us on {' '}
+        <a
+          href="https://t.me/Joshualeong"
+          target="_blank"
+          rel="noreferrer"
+          className="underline decoration-brand-base underline-offset-2 hover:text-brand-base"
+        >
+        Telegram
+        </a>{' '}
+        – we respond within a day.
+      </p>
     </div>
     <div className="space-y-4">
       {faqs.map((faq) => (
