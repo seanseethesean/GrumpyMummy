@@ -21,10 +21,9 @@ const Menu = () => {
     <div>
       <div className="mb-8 max-w-2xl">
         <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">Menu</p>
-        <h1 className="font-display text-4xl text-charcoal">Layer cakes, cheesecakes, and tiramisu</h1>
+        <h1 className="font-display text-4xl text-charcoal">Cheesecakes and tiramisu</h1>
         <p className="mt-3 text-sm text-charcoal/80">
-          Everything is made to order. We recommend booking 3-4 days ahead (longer for custom finishes). Store desserts in the fridge
-          and bring to temperature for the texture we intended.
+          Pre-orders close every Saturday for the following week’s bakes. Store desserts in the fridge.
         </p>
       </div>
 

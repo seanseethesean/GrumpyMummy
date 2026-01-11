@@ -1,4 +1,5 @@
 import type { MenuItem } from '../../types/menu'
+import { getAllergenNote } from '../../utils/allergenNotes'
 import { formatPrice } from '../../utils/format'
 
 interface MenuItemModalProps {
@@ -8,6 +9,8 @@ interface MenuItemModalProps {
 
 const MenuItemModal = ({ item, onClose }: MenuItemModalProps) => {
   if (!item) return null
+
+  const allergenNote = getAllergenNote(item.name)
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/60 px-4 py-8" onClick={onClose}>
@@ -45,8 +48,9 @@ const MenuItemModal = ({ item, onClose }: MenuItemModalProps) => {
             </div>
 
             <div className="mt-6 text-sm text-charcoal/80">
-              <p className="font-semibold uppercase tracking-[0.2em]">Allergens & Notes</p>
-              <p>{item.allergens.join(', ')}</p>
+              <p className="text-[11px] uppercase tracking-[0.25em] text-charcoal/50">Allergens & Notes</p>
+              <p className="text-sm text-charcoal/80">{item.allergens.join(', ')}</p>
+              {allergenNote && <p className="text-xs text-charcoal/60 leading-relaxed">{allergenNote}</p>}
               <p className="mt-2 italic text-charcoal/70">
                 Lead time: 3-4 days · Storage: Keep refrigerated and consume within 48 hours.
               </p>

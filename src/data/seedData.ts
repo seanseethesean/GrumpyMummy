@@ -38,8 +38,8 @@ export const menuItems: MenuItemPayload[] = [
 
 export const sampleAnnouncements: AnnouncementPayload[] = [
   {
-    title: 'January Slots Update',
-    message: 'We are fully booked for the first two weekends of January. Limited weekday pick-ups available – drop us a WhatsApp to secure a slot.',
+    title: "Valentine's Day Special",
+    message: 'A new package is available at our pop-up stores around NUS!',
     startAt: new Date().toISOString(),
     endAt: new Date(Date.now() + 1000 * 60 * 60 * 24 * 14).toISOString(),
     active: true,
