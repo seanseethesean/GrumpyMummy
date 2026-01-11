@@ -38,16 +38,19 @@ const MenuItemCard = ({ item, onSelect }: MenuItemCardProps) => {
       <p className="text-sm text-charcoal/80">{item.description}</p>
       <div>
         <p className="text-xs uppercase tracking-[0.3em] text-charcoal/50">Variants</p>
-        <div className="mt-1 flex flex-wrap gap-2">
+        <ul className="mt-1 space-y-2">
           {item.variants.slice(0, 3).map((variant) => (
-            <span key={variant.label} className="rounded-full bg-brand-light/60 px-3 py-1 text-xs text-charcoal">
+            <li
+              key={variant.label}
+              className="w-fit rounded-full bg-brand-light/60 px-3 py-1 text-xs text-charcoal"
+            >
               {variant.label} · {formatPrice(variant.price)}
-            </span>
+            </li>
           ))}
           {item.variants.length > 3 && (
-            <span className="text-xs text-charcoal/60">+{item.variants.length - 3} more</span>
+            <li className="text-xs text-charcoal/60">+{item.variants.length - 3} more</li>
           )}
-        </div>
+        </ul>
       </div>
       <div className="mt-auto">
         <p className="text-[11px] uppercase tracking-[0.25em] text-charcoal/50">Allergens & Notes</p>

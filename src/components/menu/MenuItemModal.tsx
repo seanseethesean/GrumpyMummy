@@ -13,15 +13,15 @@ const MenuItemModal = ({ item, onClose }: MenuItemModalProps) => {
   const allergenNote = getAllergenNote(item.name)
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/60 px-4 py-8" onClick={onClose}>
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-charcoal/60 px-4 py-8" onClick={onClose}>
       <div
-        className="grain-overlay relative w-full max-w-2xl rounded-3xl bg-white p-6 shadow-card"
+        className="grain-overlay relative mx-auto w-full max-w-2xl rounded-3xl bg-white p-6 shadow-card"
         onClick={(event) => event.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-5 top-5 text-charcoal/60 transition hover:text-brand-base"
+          className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-lg text-charcoal shadow-[0_8px_25px_rgba(15,23,42,0.25)] transition hover:scale-105"
           aria-label="Close details"
         >
           ✕
