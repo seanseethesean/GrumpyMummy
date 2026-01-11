@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import Spinner from '../components/common/Spinner'
 import MenuItemCard from '../components/menu/MenuItemCard'
 import MenuItemModal from '../components/menu/MenuItemModal'
@@ -11,10 +11,6 @@ const Menu = () => {
   const { items, loading } = useMenuItems()
   const [selectedCategory, setSelectedCategory] = useState<(typeof categories)[number]>('All')
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null)
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-  }, [])
 
   const filteredItems = useMemo(() => {
     if (selectedCategory === 'All') return items
